@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<style>
+    body {
+        font-family: 'sans-serif';
+    }
+    #textarea {
+        min-height: 200px; 
+        min-width: 400px; 
+        border: 2px solid black; 
+        margin: 20px 0;
+    }
+    #convert {
+        margin-bottom: 20px;
+    }
+    #output {
+        display: block;
+        border: 1px solid black;
+        padding: 10px;
+    }
+</style>
+<body>
+    <h2 style="font-weight: unset">
+        <strong>Pas</strong>te <strong>te</strong>xt <strong>he</strong>re <strong>t</strong>o <strong>conv</strong>ert
+        <strong>t</strong>o "<strong>bold</strong>-case"
+        <br />
+    </h2>
+    <div contenteditable id="textarea">        
+    </div>
+    <button id="convert">Convert</button><br/>
+    <label>Output
+        <output id="output"></output>
+    </label>
+</body>
+<script src="./script.js"></script>
+</html>
